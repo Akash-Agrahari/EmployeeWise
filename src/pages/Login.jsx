@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Cursor from "../components/cursor";
 import { toast,Toaster } from "react-hot-toast";
-
+import Cursor from "../components/cursor";
 
 function Login() {
     useEffect(() => {
