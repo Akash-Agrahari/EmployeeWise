@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+*{
+    font-family:  "Sf Pro Display";
+}
+
+
+.cursor{
+    display: none;
+}
+
+@media (min-width: 768px) {  /* Change width as per need */
+    .cursor {
+      display: block;
+    }
+  }
+
+
+  .main::-webkit-scrollbar{
+    display: none;
+  }
+
+  .main{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  @media (max-width: 768px) {
+
+    .para{
+      font-size: smaller;
+      letter-spacing: -0.08em;
+    }
+    .h2,.h1{
+      font-size: 12px;
+      background-color: transparent;
+    }
+    .search{
+      width: 150px;
+      height: 35px;
+    }
+    .search-dialog{
+      height: 40px;
+      padding:0px 20px ;
+    }
+    .search-dialog::placeholder{
+      font-size: 12px;
+    }
+
+    .loader-ios{
+      display: none;
+    }
+
+    .nav{
+      padding: 5px ;
+    }
+    .main{
+      overflow: hidden;
+      gap: 50px;
+    }
+    .hero .left{
+      overflow: hidden;
+      display: grid;
+      padding: 0px 0px;
+      
+    }
+    .email-para{
+      font-size:x-small;
+    }
+
+    .user-card{
+      gap: 70px
+    }
+
+    .users-list {
+      gap: 0px;
+      
+    }
+    
+    .query{
+      padding: 20px;
+    }
+
+    .logout{
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .input-button
+    {
+      font-size: 10px;
+
+    }
+
+    button{
+      font-size: 10px;
+      width: 80px;
+    }
+    .dialog-box {
+      gap: 15px;
+      position: absolute;
+      background: white;
+      width: 300px;
+      border-radius: 12px;
+      border : 1px solid black;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+  }
