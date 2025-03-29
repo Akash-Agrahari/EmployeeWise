@@ -1,11 +1,11 @@
 // Import haedings.. //
 import { useEffect, useState } from "react";
 import React from "react";
-import Cursor from "../components/cursor";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast,Toaster } from "react-hot-toast";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Cursor from '../components/Cursor'
 
 function Landing() {
   const [logOutMessage, setLogOutMessage] = useState("");
